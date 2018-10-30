@@ -33,6 +33,7 @@ module.exports.routes = {
   'GET /account':            { action: 'account/view-account-overview' },
   'GET /account/password':   { action: 'account/view-edit-password' },
   'GET /account/profile':    { action: 'account/view-edit-profile' },
+  'GET /things':             { action: 'things/view-available-things' },
 
 
   //  ╔═╗╔═╗╦  ╔═╗╔╗╔╔╦╗╔═╗╔═╗╦╔╗╔╔╦╗╔═╗
@@ -49,7 +50,8 @@ module.exports.routes = {
   'POST  /api/v1/entrance/send-password-recovery-email': { action: 'entrance/send-password-recovery-email' },
   'POST  /api/v1/entrance/update-password-and-login':    { action: 'entrance/update-password-and-login' },
   'POST  /api/v1/deliver-contact-form-message':          { action: 'deliver-contact-form-message' },
-
+  //agregado del curso de youtube
+  'GET   /api/champs': 'ChampController.get',
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
@@ -60,6 +62,7 @@ module.exports.routes = {
   //  ║║║║╚═╗║    ╠╦╝║╣  ║║║╠╦╝║╣ ║   ║ ╚═╗
   //  ╩ ╩╩╚═╝╚═╝  ╩╚═╚═╝═╩╝╩╩╚═╚═╝╚═╝ ╩ ╚═╝
   '/terms':                   '/legal/terms',
+  '/help':                    '/contact',
   '/logout':                  '/api/v1/account/logout',
 
 };
