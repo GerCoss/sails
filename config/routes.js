@@ -52,6 +52,7 @@ module.exports.routes = {
   'POST  /api/v1/deliver-contact-form-message':          { action: 'deliver-contact-form-message' },
   //agregado del curso de youtube
   'GET   /api/champs': 'ChampController.get',
+  'GET   /api/v1/things':                             {action:'things/get-available-things'},
 
   //  ╦ ╦╔═╗╔╗ ╦ ╦╔═╗╔═╗╦╔═╔═╗
   //  ║║║║╣ ╠╩╗╠═╣║ ║║ ║╠╩╗╚═╗
@@ -64,5 +65,4 @@ module.exports.routes = {
   '/terms':                   '/legal/terms',
   '/help':                    '/contact',
   '/logout':                  '/api/v1/account/logout',
-
 };

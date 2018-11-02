@@ -8,7 +8,7 @@
 module.exports = {
   
     get: function (req,res) {
-        Champ.find()
+        User.find()
             .then(function(champs){
                 if(!champs || champs.length === 0){
                     return res.send({

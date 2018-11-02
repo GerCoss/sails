@@ -7,8 +7,7 @@
   <p>Cosas disponibles para prestar</p>
   <button>TODO</button>
   <ul>
-    <li>Taladro</li>
-    <li>Bicicleta</li>
+    <li v-for="cosas in things" @click="clickThing(cosas.id)">{{cosas.label}}</li>
   </ul>
 </div>
 <%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>

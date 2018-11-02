@@ -43,7 +43,8 @@
     "async": true,
 
     // Models:
-    "User": true
+    "User": true,
+    "Thing":true
     
     // …and any others.
     // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

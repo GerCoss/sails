@@ -17,9 +17,18 @@ module.exports = {
 
 
   fn: async function (inputs, exits) {
-
+    // var things = [
+    //   {id:1,label:"taladro"},
+    //   {id:2,label:"bicicleta"},
+    // ];
+    
+    //TODO: regresar y solo traer cosas que el usuario tiene permitido ver
+    var things=await Thing.find();
+    
     // Respond with view.
-    return exits.success();
+    return exits.success({
+      things: things
+    });
 
   }
 

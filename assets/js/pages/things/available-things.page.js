@@ -12,6 +12,7 @@ parasails.registerPage('available-things', {
   beforeMount: function() {
     // Attach any initial data from the server.
     _.extend(this, SAILS_LOCALS);
+    
   },
   mounted: async function() {
     //…
@@ -21,6 +22,8 @@ parasails.registerPage('available-things', {
   //  ║║║║ ║ ║╣ ╠╦╝╠═╣║   ║ ║║ ║║║║╚═╗
   //  ╩╝╚╝ ╩ ╚═╝╩╚═╩ ╩╚═╝ ╩ ╩╚═╝╝╚╝╚═╝
   methods: {
-    //…
+    clickThing: function(thingId){
+      console.log("clicked thing #"+thingId)
+    }
   }
 });

@@ -50,9 +50,9 @@ module.exports.datastores = {
     ***************************************************************************/
     // adapter: 'sails-mysql',
     // url: 'mysql://root:root@localhost:3306/Edivers',
-    adapter: 'sails-mysql',
-        // url: 'mysql://root@127.0.0.1:3306/incidencias',
-        url: 'mysql://grrdcss:56946892@85.10.205.173:3306/debugin',
+    // adapter: 'sails-mysql',
+    //     // url: 'mysql://root@127.0.0.1:3306/incidencias',
+    //     url: 'mysql://grrdcss:56946892@85.10.205.173:3306/debugin',
 
   },
 
